@@ -1,73 +1,141 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>project</title>
-    <style>
-       body{
-         height: 680px;
-          background: radial-gradient(aqua 30%, tan 50%, yellow);
-          } 
-          h2 , h3{
-            text-shadow:2px 2px 2px indigo;
-            text-align:center;
-          }
-          #centerbox{
-            border: 2px solid red;
-            border-radius: 100px;
-            background: linear-gradient(270deg,rgba(25,200,70,.7),rgba(100,150,250,.6), rgba(150,250,100,.7) );
-            width:210px;
-            margin-left: 240px;
-            
-          }
-          #steakhouse {
-            margin-top:100px;
-            border: 2px solid red;
-            width:210px;
-            height:100px;
-            background: green;
-          }
-          #mediterraneanfood {
-            margin-top:20px;
-            border: 2px solid red;
-            width:210px;
-            height:100px;
-            background: teal;
-          }
-          #pizza{
-            margin-top:40px;
-            border: 2px solid red;
-            width:210px;
-            height:100px;
-            background: orange;
-          }
-          #japanese{
-            margin-top: 40px;
-            border: 2px solid red;
-            width:210px;
-            height:100px;
-            background: white;
-          }
-    </style>
-  </head>
-  <body>
-  <h2>Welcome to the bay ridge restaurant locator!!!!! On this website you can find what restaurant best suits you according its location and what it has.</h2>
-  <div id="steakhouse">
-    <h3>Do you like nice juicy <br>steak or/and hamburgers, hover here </h3>
+
+<head>
+  <meta charset="UTF-8">
+  <title>project</title>
+  <style>
+    body {
+      height: 690px;
+      background: radial-gradient(aqua 30%, tan 50%, yellow);
+    }
+
+    h2,
+    h3 {
+      text-shadow: 2px 2px 2px indigo;
+      text-align: center;
+    }
+
+    #centerbox {
+      border: 2px solid red;
+      border-radius: 100px;
+      background: linear-gradient(270deg, rgba(25, 200, 70, .7), rgba(100, 150, 250, .6), rgba(150, 250, 100, .7));
+      width: 210px;
+      margin-left: 240px;
+      animation-name: example;
+      animation-duration: 2s;
+    }
+
+    @keyframes example {
+      from {
+        background: linear-gradient(270deg, rgba(25, 200, 70, .7), rgba(100, 150, 250, .6), rgba(150, 250, 100, .7));
+      }
+      to {
+        background: linear-gradient(270deg, rgba(12, 20, 170, .7), rgba(200, 10, 150, .6), rgba(250, 50, 90, .7));
+
+      
+      transform:scale(2,2);
+      }
+    }
+
+    #steakhouse {
+      margin-top: 100px;
+      border: 2px solid red;
+      width: 210px;
+      height: 100px;
+      background: green;
     
-  </div>
+    }
+
+    #mediterraneanfood {
+      margin-top: 20px;
+      border: 2px solid red;
+      width: 210px;
+      height: 100px;
+      background: teal;
+  
+    }
+
+    #pizza {
+      margin-top: 40px;
+      border: 2px solid red;
+      width: 210px;
+      height: 100px;
+      background: orange;
+    
+    }
+
+    #japanese {
+      margin-top: 40px;
+      border: 2px solid red;
+      width: 210px;
+      height: 100px;
+      background: white;
+     
+    }
+    #image1{
+      opacity:0;
+      transition:opacity .5s;
+    }
+    #image1:hover{
+      opacity:1;
+    }
+        #image2{
+      opacity:0;
+      transition:opacity .5s;
+    }
+    #image2:hover{
+      opacity:1;
+    }
+        #image3{
+      opacity:0;
+      transition:opacity .5s;
+    }
+    #image3:hover{
+      opacity:1;
+    }
+        #image4{
+      opacity:0;
+      transition:opacity .5s;
+    }
+    #image4:hover{
+      opacity:1;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Welcome to the bay ridge restaurant locator!!!!! On this website you can find what restaurant best suits you according its location and what it has.</h2>
   <div id="centerbox">
     <h2> Restaurants in bay ridge</h2>
   </div>
+  <div id="steakhouse">
+    <h3>Do you like nice juicy <br>steak or/and hamburgers, hover down here </h3>
+
+  </div>
+    <div id="image1">
+    <img src="picturecss1.PNG" width="300px" height="200"></img>
+  </div>
+
+  
   <div id="mediterraneanfood">
     <h3> Do you like delicious Mediterranean food, hover here</h3>
   </div>
- <div id="pizza">
-   <h3> Do you like pizza, hover here</h3>
- </div>
-<div id="japanese">
-  <h3>Do you like japanese, then hover over here</h3>
-</div>
-  </body>
-</html>
+  <div id="image2">
+    <img src="picturecss4.PNG" width="300px" height="200"></img>
+  </div>
+  <div id="pizza">
+    <h3> Do you like pizza, hover here</h3>
+  </div>
+  <div id ="image3">
+    <img src="picturecss2.PNG" width="300px" height="200"></img>
+  </div>
+  <div id="japanese">
+    <h3>Do you like japanese, then hover over here</h3>
+  </div>
+  <div id="image4">
+    <img src="picturecss3.PNG" width="300px" height="200"></img>
+  </div>
 
+</body>
+</html>
